@@ -1,0 +1,2 @@
+# MazeEditor
+ Edit .maz files

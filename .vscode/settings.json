@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        ".cache": true,
+        ".vscode": true,
+        "build": true,
+        "bin": true,
+        "compile_commands.json": true,
+        ".gitignore": true
+    }
+}

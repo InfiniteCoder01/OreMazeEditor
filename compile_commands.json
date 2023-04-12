@@ -1,0 +1,198 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Isrc/",
+      "-I/mnt/D/Dev/C++/libraries/imgui/.",
+      "-std=c++17",
+      "-o",
+      "build/emscripten.cpp.o",
+      "src/backend/emscripten.cpp"
+    ],
+    "directory": "/mnt/D/Dev/C++/libraries/Mova",
+    "file": "/mnt/D/Dev/C++/libraries/Mova/src/backend/emscripten.cpp",
+    "output": "/mnt/D/Dev/C++/libraries/Mova/build/emscripten.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Isrc/",
+      "-I/mnt/D/Dev/C++/libraries/imgui/.",
+      "-std=c++17",
+      "-o",
+      "build/linux.cpp.o",
+      "src/backend/linux.cpp"
+    ],
+    "directory": "/mnt/D/Dev/C++/libraries/Mova",
+    "file": "/mnt/D/Dev/C++/libraries/Mova/src/backend/linux.cpp",
+    "output": "/mnt/D/Dev/C++/libraries/Mova/build/linux.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Isrc/",
+      "-I/mnt/D/Dev/C++/libraries/imgui/.",
+      "-std=c++17",
+      "-o",
+      "build/windows.cpp.o",
+      "src/backend/windows.cpp"
+    ],
+    "directory": "/mnt/D/Dev/C++/libraries/Mova",
+    "file": "/mnt/D/Dev/C++/libraries/Mova/src/backend/windows.cpp",
+    "output": "/mnt/D/Dev/C++/libraries/Mova/build/windows.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Isrc/",
+      "-I/mnt/D/Dev/C++/libraries/imgui/.",
+      "-std=c++17",
+      "-o",
+      "build/movaBackend.cpp.o",
+      "src/movaBackend.cpp"
+    ],
+    "directory": "/mnt/D/Dev/C++/libraries/Mova",
+    "file": "/mnt/D/Dev/C++/libraries/Mova/src/movaBackend.cpp",
+    "output": "/mnt/D/Dev/C++/libraries/Mova/build/movaBackend.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Isrc/",
+      "-I/mnt/D/Dev/C++/libraries/imgui/.",
+      "-std=c++17",
+      "-o",
+      "build/movaGUI.cpp.o",
+      "src/movaGUI.cpp"
+    ],
+    "directory": "/mnt/D/Dev/C++/libraries/Mova",
+    "file": "/mnt/D/Dev/C++/libraries/Mova/src/movaGUI.cpp",
+    "output": "/mnt/D/Dev/C++/libraries/Mova/build/movaGUI.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Isrc/",
+      "-I/mnt/D/Dev/C++/libraries/imgui/.",
+      "-std=c++17",
+      "-o",
+      "build/movaImage.cpp.o",
+      "src/movaImage.cpp"
+    ],
+    "directory": "/mnt/D/Dev/C++/libraries/Mova",
+    "file": "/mnt/D/Dev/C++/libraries/Mova/src/movaImage.cpp",
+    "output": "/mnt/D/Dev/C++/libraries/Mova/build/movaImage.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Isrc",
+      "-Isrc/include",
+      "-I/usr/include/gtk-3.0",
+      "-I/usr/include/pango-1.0",
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-I/usr/include/sysprof-4",
+      "-I/usr/include/harfbuzz",
+      "-I/usr/include/freetype2",
+      "-I/usr/include/libpng16",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/fribidi",
+      "-I/usr/include/cairo",
+      "-I/usr/include/pixman-1",
+      "-I/usr/include/gdk-pixbuf-2.0",
+      "-I/usr/include/gio-unix-2.0",
+      "-I/usr/include/cloudproviders",
+      "-I/usr/include/atk-1.0",
+      "-I/usr/include/at-spi2-atk/2.0",
+      "-I/usr/include/at-spi-2.0",
+      "-I/usr/include/dbus-1.0",
+      "-I/usr/lib/dbus-1.0/include",
+      "-o",
+      "build/nfd_common.c.o",
+      "src/nfd_common.c"
+    ],
+    "directory": "/mnt/D/Dev/C++/libraries/nativefiledialog",
+    "file": "/mnt/D/Dev/C++/libraries/nativefiledialog/src/nfd_common.c",
+    "output": "/mnt/D/Dev/C++/libraries/nativefiledialog/build/nfd_common.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Isrc",
+      "-Isrc/include",
+      "-I/usr/include/gtk-3.0",
+      "-I/usr/include/pango-1.0",
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-I/usr/include/sysprof-4",
+      "-I/usr/include/harfbuzz",
+      "-I/usr/include/freetype2",
+      "-I/usr/include/libpng16",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/fribidi",
+      "-I/usr/include/cairo",
+      "-I/usr/include/pixman-1",
+      "-I/usr/include/gdk-pixbuf-2.0",
+      "-I/usr/include/gio-unix-2.0",
+      "-I/usr/include/cloudproviders",
+      "-I/usr/include/atk-1.0",
+      "-I/usr/include/at-spi2-atk/2.0",
+      "-I/usr/include/at-spi-2.0",
+      "-I/usr/include/dbus-1.0",
+      "-I/usr/lib/dbus-1.0/include",
+      "-o",
+      "build/nfd_gtk.c.o",
+      "src/nfd_gtk.c"
+    ],
+    "directory": "/mnt/D/Dev/C++/libraries/nativefiledialog",
+    "file": "/mnt/D/Dev/C++/libraries/nativefiledialog/src/nfd_gtk.c",
+    "output": "/mnt/D/Dev/C++/libraries/nativefiledialog/build/nfd_gtk.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Isrc",
+      "-I/mnt/D/Dev/C++/libraries/Mova/src/",
+      "-I/mnt/D/Dev/C++/libraries/nativefiledialog/src",
+      "-I/mnt/D/Dev/C++/libraries/nativefiledialog/src/include",
+      "-Ofast",
+      "-std=c++17",
+      "-o",
+      "build/main.cpp.o",
+      "src/main.cpp"
+    ],
+    "directory": "/mnt/D/Dev/C++/Tools/MazeEditor",
+    "file": "/mnt/D/Dev/C++/Tools/MazeEditor/src/main.cpp",
+    "output": "/mnt/D/Dev/C++/Tools/MazeEditor/build/main.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-Isrc",
+      "-I/mnt/D/Dev/C++/libraries/Mova/src/",
+      "-I/mnt/D/Dev/C++/libraries/nativefiledialog/src",
+      "-I/mnt/D/Dev/C++/libraries/nativefiledialog/src/include",
+      "-Ofast",
+      "-std=c++17",
+      "-o",
+      "build/maze.cpp.o",
+      "src/maze.cpp"
+    ],
+    "directory": "/mnt/D/Dev/C++/Tools/MazeEditor",
+    "file": "/mnt/D/Dev/C++/Tools/MazeEditor/src/maze.cpp",
+    "output": "/mnt/D/Dev/C++/Tools/MazeEditor/build/maze.cpp.o"
+  }
+]
