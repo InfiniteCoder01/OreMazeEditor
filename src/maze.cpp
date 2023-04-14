@@ -37,7 +37,7 @@ void Maze::save() {
   } else if (result != NFD_CANCEL) MV_ERR("Error: %s\n", NFD_GetError());
 }
 
-void Maze::exportMaze(const std::string& filename, MvFont& font) {
+void Maze::exportMaze(std::string filename, MvFont& font) {
   static const uint32_t cellSize = 50, padding = 10, wallThickness = 5, colSize = 7;
   MvImage maze = MvImage((size + 1) * cellSize + padding * 2);
   maze.setFont(font);
@@ -78,6 +78,7 @@ void Maze::exportMaze(const std::string& filename, MvFont& font) {
   }
 
   // * Export
+  if (filename.substr(filename.size() - 4) != ".png") filename += ".png";
   stbi_write_png(filename.c_str(), maze.width(), maze.height(), 4, maze.data(), maze.width() * 4);
 }
 

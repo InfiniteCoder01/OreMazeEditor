@@ -1,5 +1,8 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "00Names.hpp"
+#ifdef __WINDOWS__
+#include <windows.h>
+#endif
 
 Maze maze;
 Preferences preferences;
@@ -8,6 +11,14 @@ Algorithm algorithm = Algorithm::FloodFill;
 
 bool drawDistances = true;
 bool drawPath = false;
+
+void openWeb(const std::string& url) {
+#ifdef __WINDOWS__
+  ShellExecute(0, 0, url.c_str(), 0, 0 , SW_SHOW);
+#else
+  system(("xdg-open " + url).c_str());
+#endif
+}
 
 int main() {
   MvWindow window("Maze Editor");
@@ -105,6 +116,8 @@ int main() {
     const uint32_t rightHand = maze.rightHandPath();
     if (leftHand != MAX_DISTANCE) MvGui::Text("Left hand path: %zu cells", leftHand);
     if (rightHand != MAX_DISTANCE) MvGui::Text("Right hand path: %zu cells", rightHand);
+    if (MvGui::Button("Creator: https://github.com/InfiniteCoder01/")) openWeb("https://github.com/InfiniteCoder01/");
+    if (MvGui::Button("PinMode: http://pinmode.by/")) openWeb("http://pinmode.by/");
 
     MvGui::endFrame();
     Mova::nextFrame();

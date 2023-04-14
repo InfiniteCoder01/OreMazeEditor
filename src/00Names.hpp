@@ -70,7 +70,7 @@ struct Maze {
   void load();
   void save(const std::string& filename);
   void save();
-  void exportMaze(const std::string& filename, MvFont& font);
+  void exportMaze(std::string filename, MvFont& font);
   void exportMaze(MvFont& font);
   void clear();
   bool neighbourBounds(vec2i cell, uint8_t dir) const;
