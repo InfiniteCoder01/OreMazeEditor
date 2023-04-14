@@ -12,15 +12,15 @@ bool drawPath = false;
 int main() {
   MvWindow window("Maze Editor");
 
-  // MvFont font(R"(C:\Windows\Fonts\Arial.ttf)", 26);
-  MvFont font("Assets/OpenSans-Regular.ttf", 30);
+  MvFont font(R"(C:\Windows\Fonts\Arial.ttf)", window.height() / 25);
+  // MvFont font("Assets/OpenSans-Regular.ttf", 30);
   window.setFont(font);
   MvGui::setWindow(window);
 
   maze.clear();
 
   while (window.isOpen()) {
-    preferences.cellSize = (window.height() - 100) / maze.size.y;
+    preferences.cellSize = min((window.height() - 100) / maze.size.y, (window.width() - 500) / maze.size.y);
     maze.floodFill();
 
     window.clear(MvColor(115, 140, 152));
