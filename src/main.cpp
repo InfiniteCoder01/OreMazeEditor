@@ -12,16 +12,8 @@ Algorithm algorithm = Algorithm::FloodFill;
 bool drawDistances = true;
 bool drawPath = false;
 
-void openWeb(const std::string& url) {
-#ifdef __WINDOWS__
-  ShellExecute(0, 0, url.c_str(), 0, 0 , SW_SHOW);
-#else
-  system(("xdg-open " + url).c_str());
-#endif
-}
-
 int main() {
-  MvWindow window("Maze Editor");
+  MvWindow window("OreMaze Editor");
 
 #ifdef __WINDOWS__
   MvFont font(R"(C:\Windows\Fonts\Arial.ttf)", window.height() / 25);
@@ -120,8 +112,8 @@ int main() {
     const uint32_t rightHand = maze.rightHandPath();
     if (leftHand != MAX_DISTANCE) MvGui::Text("Left hand path: %zu cells", leftHand);
     if (rightHand != MAX_DISTANCE) MvGui::Text("Right hand path: %zu cells", rightHand);
-    if (MvGui::Button("Creator: https://github.com/InfiniteCoder01/")) openWeb("https://github.com/InfiniteCoder01/");
-    if (MvGui::Button("PinMode: http://pinmode.by/")) openWeb("http://pinmode.by/");
+    if (MvGui::Button("Made by InfiniteCoder (Copy Link)")) Mova::copyToClipboard("https://www.youtube.com/@InfiniteCoder01/about");
+    if (MvGui::Button("Sponsored by PinMode (Copy Link)")) Mova::copyToClipboard("http://pinmode.by/");
 
     MvGui::endFrame();
     Mova::nextFrame();
