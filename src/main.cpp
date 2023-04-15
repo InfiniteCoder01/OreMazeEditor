@@ -23,8 +23,12 @@ void openWeb(const std::string& url) {
 int main() {
   MvWindow window("Maze Editor");
 
+#ifdef __WINDOWS__
   MvFont font(R"(C:\Windows\Fonts\Arial.ttf)", window.height() / 25);
-  // MvFont font("Assets/OpenSans-Regular.ttf", 30);
+#else
+  MvFont font("Assets/OpenSans-Regular.ttf", 30);
+#endif
+
   window.setFont(font);
   MvGui::setWindow(window);
 

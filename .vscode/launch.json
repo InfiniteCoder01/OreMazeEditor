@@ -8,7 +8,7 @@
             "type": "by-gdb",
             "request": "launch",
             "name": "Launch(gdb)",
-            "program": "${workspaceFolder}/bin/MazeEditor.exe",
+            "program": "${workspaceFolder}/bin/MazeEditor",
             "cwd": "${workspaceRoot}"
         }
     ]
