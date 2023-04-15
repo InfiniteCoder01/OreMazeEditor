@@ -21,7 +21,8 @@ void Maze::load() {
   } else if (result != NFD_CANCEL) MV_ERR("Error: %s\n", NFD_GetError());
 }
 
-void Maze::save(const std::string& filename) {
+void Maze::save(std::string filename) {
+  if (filename.substr(filename.size() - 4) != ".maz") filename += ".maz";
   FILE* file = fopen(filename.c_str(), "wb");
   fwrite(data.data(), 1, MAZE_AREA, file);
   fclose(file);

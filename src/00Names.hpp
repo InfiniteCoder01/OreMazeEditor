@@ -68,7 +68,7 @@ struct Maze {
   // * Utils
   void load(const std::string& filename);
   void load();
-  void save(const std::string& filename);
+  void save(std::string filename);
   void save();
   void exportMaze(std::string filename, MvFont& font);
   void exportMaze(MvFont& font);
