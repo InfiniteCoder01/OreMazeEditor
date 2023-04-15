@@ -7,7 +7,7 @@ linkerFlags "-static";
 // flags "-DDEBUG -fsanitize=leak -g3";
 
 // For GCC
-// output "./bin/MazeEditor";
+// output "./bin/OreMazeEditor";
 
 // For MinGW
-output "bin\MazeEditor.exe";
+output "bin\OreMazeEditor.exe";
