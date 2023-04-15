@@ -113,7 +113,7 @@ int main() {
     if (leftHand != MAX_DISTANCE) MvGui::Text("Left hand path: %zu cells", leftHand);
     if (rightHand != MAX_DISTANCE) MvGui::Text("Right hand path: %zu cells", rightHand);
     if (MvGui::Button("Made by InfiniteCoder (Copy Link)")) Mova::copyToClipboard("https://www.youtube.com/@InfiniteCoder01/about");
-    if (MvGui::Button("Sponsored by PinMode (Copy Link)")) Mova::copyToClipboard("http://pinmode.by/");
+    if (MvGui::Button("Powered by PinMode (Copy Link)")) Mova::copyToClipboard("http://pinmode.by/");
 
     MvGui::endFrame();
     Mova::nextFrame();
