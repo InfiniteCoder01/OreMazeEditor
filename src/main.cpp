@@ -112,8 +112,8 @@ int main() {
     const uint32_t rightHand = maze.rightHandPath();
     if (leftHand != MAX_DISTANCE) MvGui::Text("Left hand path: %zu cells", leftHand);
     if (rightHand != MAX_DISTANCE) MvGui::Text("Right hand path: %zu cells", rightHand);
-    if (MvGui::Button("Made by InfiniteCoder (Copy Link)")) Mova::copyToClipboard("https://www.youtube.com/@InfiniteCoder01/about");
-    if (MvGui::Button("Powered by PinMode (Copy Link)")) Mova::copyToClipboard("http://pinmode.by/");
+    if (MvGui::Button("Made by InfiniteCoder (Dima Lobach) (Copy Link)")) Mova::copyToClipboard("https://www.youtube.com/@InfiniteCoder01/about");
+    if (MvGui::Button("Powered by pinmode.by (Copy Link)")) Mova::copyToClipboard("http://pinmode.by/");
 
     MvGui::endFrame();
     Mova::nextFrame();

@@ -142,7 +142,7 @@ void Maze::draw(MvWindow& window, vec2i tl) {
         } else if (tool == Tool::SelectFinish && Mova::isMouseButtonPressed(Mova::MouseLeft)) {
           finish = vec2u(x, y);
           tool = Tool::DrawWalls;
-        } else if (tool == Tool::DrawWalls) { // TODO: Cross
+        } else if (tool == Tool::DrawWalls) {
           uint8_t direction = 0;
           const vec2u mouse = window.getMousePosition() - cell.position();
           if (mouse.x < cell.width / 4) direction = WEST;

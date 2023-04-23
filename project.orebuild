@@ -1,13 +1,13 @@
 library "Mova";
 library "nativefiledialog";
 flags "-Ofast -std=c++17";
+
+[Debug]:
+flags "-DDEBUG -fsanitize=leak -g3";
+
+[Linux]:
+output "./bin/OreMazeEditor";
+
+[Windows]:
 linkerFlags "-static";
-
-// For debug
-// flags "-DDEBUG -fsanitize=leak -g3";
-
-// For GCC
-// output "./bin/OreMazeEditor";
-
-// For MinGW
 output "bin\OreMazeEditor.exe";
